@@ -21,6 +21,9 @@
 		40CDDA2D18D8BA2B00AB6806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CDDA0F18D8BA2B00AB6806 /* UIKit.framework */; };
 		40CDDA3518D8BA2B00AB6806 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40CDDA3318D8BA2B00AB6806 /* InfoPlist.strings */; };
 		40CDDA3718D8BA2B00AB6806 /* InfoBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDDA3618D8BA2B00AB6806 /* InfoBarTests.m */; };
+		40CDDA4618D8BB3000AB6806 /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDDA4218D8BB3000AB6806 /* SKBounceAnimation.m */; };
+		40CDDA4718D8BB3000AB6806 /* ZAActivityBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40CDDA4318D8BB3000AB6806 /* ZAActivityBar.bundle */; };
+		40CDDA4818D8BB3000AB6806 /* ZAActivityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDDA4518D8BB3000AB6806 /* ZAActivityBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		40CDDA3218D8BA2B00AB6806 /* InfoBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoBarTests-Info.plist"; sourceTree = "<group>"; };
 		40CDDA3418D8BA2B00AB6806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40CDDA3618D8BA2B00AB6806 /* InfoBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoBarTests.m; sourceTree = "<group>"; };
+		40CDDA4118D8BB3000AB6806 /* SKBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBounceAnimation.h; sourceTree = "<group>"; };
+		40CDDA4218D8BB3000AB6806 /* SKBounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBounceAnimation.m; sourceTree = "<group>"; };
+		40CDDA4318D8BB3000AB6806 /* ZAActivityBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZAActivityBar.bundle; sourceTree = "<group>"; };
+		40CDDA4418D8BB3000AB6806 /* ZAActivityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAActivityBar.h; sourceTree = "<group>"; };
+		40CDDA4518D8BB3000AB6806 /* ZAActivityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAActivityBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		40CDDA1118D8BA2B00AB6806 /* InfoBar */ = {
 			isa = PBXGroup;
 			children = (
+				40CDDA4018D8BB3000AB6806 /* ActivityBar */,
 				40CDDA1A18D8BA2B00AB6806 /* AppDelegate.h */,
 				40CDDA1B18D8BA2B00AB6806 /* AppDelegate.m */,
 				40CDDA1D18D8BA2B00AB6806 /* Main.storyboard */,
@@ -150,6 +159,18 @@
 				40CDDA3318D8BA2B00AB6806 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40CDDA4018D8BB3000AB6806 /* ActivityBar */ = {
+			isa = PBXGroup;
+			children = (
+				40CDDA4118D8BB3000AB6806 /* SKBounceAnimation.h */,
+				40CDDA4218D8BB3000AB6806 /* SKBounceAnimation.m */,
+				40CDDA4318D8BB3000AB6806 /* ZAActivityBar.bundle */,
+				40CDDA4418D8BB3000AB6806 /* ZAActivityBar.h */,
+				40CDDA4518D8BB3000AB6806 /* ZAActivityBar.m */,
+			);
+			path = ActivityBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CDDA2418D8BA2B00AB6806 /* Images.xcassets in Resources */,
+				40CDDA4718D8BB3000AB6806 /* ZAActivityBar.bundle in Resources */,
 				40CDDA1618D8BA2B00AB6806 /* InfoPlist.strings in Resources */,
 				40CDDA1F18D8BA2B00AB6806 /* Main.storyboard in Resources */,
 			);
@@ -249,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CDDA4618D8BB3000AB6806 /* SKBounceAnimation.m in Sources */,
+				40CDDA4818D8BB3000AB6806 /* ZAActivityBar.m in Sources */,
 				40CDDA2218D8BA2B00AB6806 /* ViewController.m in Sources */,
 				40CDDA1C18D8BA2B00AB6806 /* AppDelegate.m in Sources */,
 				40CDDA1818D8BA2B00AB6806 /* main.m in Sources */,
